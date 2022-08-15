@@ -51,7 +51,7 @@ def trackFace(info, w, pid, pError):
     Area = info [1]
     x,y = info[0]
     fb = 0 
-    
+    .
     error = x - w//2
     speed = pid[0]*error + pid[1] * (error - pError)
     speed = int(np.clip(speed, -100,100))
